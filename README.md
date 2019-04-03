@@ -87,6 +87,7 @@ In order to create the training data, I used the Udacity sample data as a base. 
 2. Center camera image flipped horizontally
 3. Left camera image
 4. Right camera image
+
 Horizontally flipped camera image will help to prevent underfitting when the vehicle faces a different type of curve road. The pre-defined route in this simulator is just an oval track, so the camera is constantly seeing similar curve road such as only left curve or right curve. Without using flipped image, trained network will not know what to do when it encounters different curve road. Also, by using left and right camera image I can teach my model how to steer if the car drifts off to the left or the right.
 Here are some examples of raw images:
 
